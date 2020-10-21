@@ -50,6 +50,7 @@ button:active {
   width: 100vw;
   height: 100vh;
   transform: skew(0, -5deg);
+  margin: none;
   margin-top: -20px;
 }
 .cover * {
