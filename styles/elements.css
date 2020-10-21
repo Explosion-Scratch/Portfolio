@@ -43,7 +43,7 @@ button:active {
   font-style: normal;
 }
 .cover center {
-  font-size: 20px;
+  font-size: 4vw;
 }
 .cover {
   --skew: 5deg;
