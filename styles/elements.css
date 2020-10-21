@@ -54,8 +54,14 @@ button:active {
   margin: none !important;
   margin-top: -20px;
 }
-.main {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.cover,
+.cover * {
+  background: var(--lighter);
+}
+.cover * {
+  transform: skew(0, calc(var(--skew) / 2));
+}
+.cover {
+  min-height: 400px;
 }
