@@ -22,7 +22,7 @@ button:active {
 }
 .header {
   text-align: center;
-  font-size: 10vw;
+  font-size: 8vw;
   color: whitesmoke;
   padding-right: 40px;
   padding-left: 40px;
@@ -71,7 +71,7 @@ button:active {
 .cover {
   overflow: hidden;
   width: 100vw;
-  height: 80vh !important;
+  height: 70vh !important;
   margin: 0 auto;
   background-color: var(--cover-color);
   background-color: attr(data-background);
