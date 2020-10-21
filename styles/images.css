@@ -19,7 +19,9 @@
   width: 33.33%;
   display: none; /* Hide all elements by default */
 }
-
+.column:hover {
+  box-shadow: 5px 10px var(--accents-color);
+}
 /* Clear floats after rows */
 .row:after {
   content: "";
