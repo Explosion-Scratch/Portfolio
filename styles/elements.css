@@ -21,7 +21,8 @@ button:active {
   color: var(--background-color);
 }
 .header {
-  font-size: 50px;
+  text-align: center;
+  font-size: 10vw;
   color: whitesmoke;
   padding-right: 40px;
   padding-left: 40px;
