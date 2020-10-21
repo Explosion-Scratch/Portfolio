@@ -65,6 +65,7 @@ button:active {
   --cover-color: var(--background-color);
 }
 .cover {
+  overflow: hidden;
   width: 100vw;
   height: 80vh !important;
   margin: 0 auto;
