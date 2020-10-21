@@ -94,13 +94,3 @@ button:active {
     text-shadow: 0px 0px 5px -2px var(--accents-color);
   }
 }
-hr {
-  background-color: linear-gradient(
-    to right,
-    transparent,
-    var(--accents-color),
-    transparent
-  );
-  height: 2px;
-  border: none;
-}
