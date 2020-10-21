@@ -49,6 +49,9 @@ button:active {
 .cover * {
   --cover-color: var(--lighter);
 }
+.cover .two {
+  --cover-color: red;
+}
 .cover {
   width: 100vw;
   height: 100vh !important;
