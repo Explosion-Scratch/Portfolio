@@ -20,7 +20,10 @@ button:active {
 }
 .header {
   font-size: 50px;
-  color: var(--accents-color);
+  color: whitesmoke;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 40vh;
 }
 .header span {
   background: linear-gradient(
