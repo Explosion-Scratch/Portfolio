@@ -20,6 +20,8 @@ button:active {
 }
 .header {
   font-size: 50px;
+  font-weight: 500;
+  font-family: Raleway;
   padding: 100px 20px;
 }
 .cover {
