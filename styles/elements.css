@@ -64,6 +64,10 @@ button:active {
 .two * {
   --cover-color: var(--background-color);
 }
+.three,
+.three * {
+  --cover-color: var(--background-color);
+}
 .cover {
   overflow: hidden;
   width: 100vw;
