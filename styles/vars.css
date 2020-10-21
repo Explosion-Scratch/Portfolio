@@ -3,7 +3,7 @@
 :root {
   --main-color: #101010;
   --lighter: #59cfcf;
-  --secondary-background: #333;
+  --secondary-background: #cccccc;
   --background-color: white;
   --accents-color: #0b8992;
   --accents-transparent: rgb(29, 158, 158, 0.4);
@@ -13,6 +13,7 @@
 }
 .dark-mode:root {
   --lighter: #1a3838;
+  --secondary-background: #333;
   --main-color: white;
   --background-color: #101010;
   --accents-color: #5af0f0;
