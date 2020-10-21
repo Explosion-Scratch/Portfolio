@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+	--main-color: #101010;
+	--background-color: white;
+	--accents-color: #1d9e9e;
+	--accents-transparent: rgb(29, 158, 158, 0.4);
+	--secondary-color: #1d9e53;
+	--main-font: Raleway;
+	--secondary-font: Montserrat;
+}
+.dark-mode:root {
+	--main-color: white;
+	--background-color: #101010;
+	--accents-color: #5af0f0;
+	--secondary-color: #78ff42;
+}

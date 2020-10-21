@@ -1,0 +1,40 @@
+@import "vars.css";
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: var(--background);
+  padding: 10px;
+  border: 1px solid var(--accents-color);
+  border-radius: 10px;
+}
+
+.show {
+  display: block;
+}

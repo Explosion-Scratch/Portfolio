@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/main.js"></script>
+    <script src="scripts/images.js"></script>
+    <link rel="stylesheet" href="styles/images.css" />
+    <link rel="stylesheet" href="styles/tooltips.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div class="container">
+      <h1>--Explosion--</h1>
+      <p>
+        Welcome to my website!<br />
+        <button onclick="darkMode()" id="nostyle">Dark Mode</button>
+      </p>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn" onclick="filterSelection('nature')">Nature</button>
+        <button class="btn" onclick="filterSelection('cars')">Cars</button>
+        <button class="btn" onclick="filterSelection('people')">People</button>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature people">
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Mountains"
+              style="width: 100%;"
+            />
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature people">
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Mountains"
+              style="width: 100%;"
+            />
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature people">
+          <div class="content">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+              alt="Mountains"
+              style="width: 100%;"
+            />
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+    </div>
+  </body>
+</html>
+<!--
+Refrence
+Tooltips:
+<i class="qtip tip-top" data-tip="Testing!">
+Portfolio gallery grid:
+<div class='row'> </div>// Container
+Format:
+<div class="column filter1 filter2 etc">
+	<div class="content">
+		<img
+			src="image_url"
+			alt="Alt"
+		/>
+		<h4>Title</h4>
+		<p>Description</p>
+	</div>
+</div>
+-->
