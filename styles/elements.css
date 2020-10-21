@@ -65,7 +65,7 @@ button:active {
 }
 .cover {
   width: 100vw;
-  height: 100vh !important;
+  height: 80vh !important;
   margin: 0 auto;
   background-color: var(--cover-color);
   background-color: attr(data-background);
