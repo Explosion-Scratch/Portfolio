@@ -18,3 +18,11 @@ button:active {
   background-color: var(--accents-color);
   color: var(--background-color);
 }
+.header {
+  font-size: 50px;
+  padding: 100px 20px;
+}
+.cover {
+  width: 100vw;
+  height: 100vh;
+}
