@@ -49,7 +49,5 @@ button:active {
   display: block;
   width: 100vw;
   height: 100vh;
-}
-.cover {
-  background: red;
+  background: var(--lighter);
 }
