@@ -54,7 +54,13 @@ button:active {
 }
 
 .cover center {
-  font-size: 4vw;
+  font-size: 3vw;
+  overflow: visible;
+}
+@media only screen and (max-width: 600px) {
+  .cover center {
+    font-size: 5vw;
+  }
 }
 .cover,
 .cover * {
