@@ -47,10 +47,11 @@ button:active {
 }
 .cover {
   --skew: 5deg;
+  display: block;
   width: 100vw;
   height: 100vh;
   transform: skew(0, -5deg);
-  margin: none;
+  margin: none !important;
   margin-top: -20px;
 }
 .cover * {
