@@ -37,3 +37,20 @@ a {
 p {
   font-size: 20px;
 }
+a {
+  text-decoration: none;
+}
+a {
+  transition: background-size 0.3s ease-out;
+  background-image: linear-gradient(
+    to right,
+    var(--accents-transparent) 0%,
+    var(--secondary-color) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 88%;
+}
+a:hover {
+  background-size: 100% 100%;
+}
