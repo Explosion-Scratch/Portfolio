@@ -20,9 +20,17 @@ button:active {
 }
 .header {
   font-size: 50px;
-  font-weight: 500;
-  font-family: Raleway;
-  padding: 100px 20px;
+  color: var(--accents-color);
+}
+.header span {
+  background: linear-gradient(
+    to right,
+    var(--accents-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .cover {
   width: 100vw;
