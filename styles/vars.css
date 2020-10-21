@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 :root {
   --main-color: #101010;
-  --lighter: #cccccc;
+  --lighter: #59cfcf;
   --background-color: white;
-  --accents-color: #1d9e9e;
+  --accents-color: #0b8992;
   --accents-transparent: rgb(29, 158, 158, 0.4);
   --secondary-color: #1d9e53;
   --main-font: Raleway;
   --secondary-font: Montserrat;
 }
 .dark-mode:root {
-  --lighter: #202020;
+  --lighter: #1a3838;
   --main-color: white;
   --background-color: #101010;
   --accents-color: #5af0f0;
