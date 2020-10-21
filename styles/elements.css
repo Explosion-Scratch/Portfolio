@@ -1,4 +1,5 @@
 @import "vars.css";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 button {
   padding: 5px;
@@ -25,7 +26,7 @@ button:active {
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 40vh;
-  font-family: Montserrat;
+  font-family: Dancing Script;
   font-style: italic;
 }
 .header span {
