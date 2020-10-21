@@ -45,14 +45,17 @@ button:active {
 .cover center {
   font-size: 4vw;
 }
+.cover,
+.cover * {
+  --cover-color: var(--lighter);
+}
 .cover {
   width: 100vw;
   height: 100vh !important;
   margin: 0 auto;
-  background-color: var(--lighter);
+  background-color: var(--cover-color);
   background-color: attr(data-background);
 }
 .cover * {
-  background-color: var(--lighter);
-  background-color: attr(data-background);
+  background-color: var(--cover-color);
 }
