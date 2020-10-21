@@ -26,6 +26,7 @@ button:active {
   padding-left: 40px;
   padding-top: 40vh;
   font-family: Montserrat;
+  font-style: italic;
 }
 .header span {
   background: linear-gradient(
@@ -37,6 +38,7 @@ button:active {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
+  font-style: normal;
 }
 .cover {
   width: 100vw;
