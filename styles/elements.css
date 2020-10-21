@@ -46,18 +46,16 @@ button:active {
   font-size: 4vw;
 }
 .cover {
-  --skew: 5deg;
+  --skew: 10deg;
   display: block;
   width: 100vw;
   height: 100vh;
-  transform: skew(0, -5deg);
+  transform: skew(0, calc(var(--skew) * -1));
   margin: none !important;
   margin-top: -20px;
 }
-.cover * {
-  transform: skew(5deg) rotate(5deg);
-}
-.cover,
-.cover * {
-  background: var(--lighter);
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
