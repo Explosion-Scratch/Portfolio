@@ -51,7 +51,7 @@ button:active {
 }
 .two,
 .two * {
-  --cover-color: red;
+  --cover-color: var(--background-color);
 }
 .cover {
   width: 100vw;
