@@ -9,6 +9,7 @@
   margin: none;
   font-family: Raleway;
   color: var(--main-color);
+  overflow-x: hidden;
 }
 
 .container {

@@ -46,8 +46,7 @@ button:active {
   font-size: 4vw;
 }
 .cover {
-  display: block;
   width: 100vw;
   height: 100vh;
-  background: var(--lighter);
+  margin: 0 auto;
 }
