@@ -46,6 +46,16 @@ button:active {
   font-size: 20px;
 }
 .cover {
+  --skew: 5deg;
   width: 100vw;
   height: 100vh;
+  transform: skew(0, -5deg);
+  margin-top: -20px;
+}
+.cover * {
+  transform: skew(5deg) rotate(5deg);
+}
+.cover,
+.cover * {
+  background: var(--lighter);
 }
