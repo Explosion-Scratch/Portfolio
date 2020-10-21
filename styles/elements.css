@@ -50,6 +50,7 @@ button:active {
 }
 .dark-mode .header span {
   text-shadow: 0px 0px 5px var(--accents-color);
+  animation: pulse 1s infinite;
 }
 
 .cover center {
@@ -72,4 +73,16 @@ button:active {
 }
 .cover * {
   background-color: var(--cover-color);
+}
+
+@keyframes pulse {
+  0% {
+    text-shadow: 0px 0px 5px var(--accents-color);
+  }
+  50% {
+    text-shadow: 0px 0px 0px var(--accents-color);
+  }
+  100% {
+    text-shadow: 0px 0px 5px var(--accents-color);
+  }
 }
