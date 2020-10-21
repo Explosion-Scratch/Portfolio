@@ -42,7 +42,7 @@ p {
   float: right;
   padding: 10px;
   width: 150px;
-  background: red;
+  background: var(--background-color);
 }
 a {
   text-decoration: none;
