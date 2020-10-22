@@ -124,3 +124,12 @@ footer {
 .dark-mode footer {
   text-shadow: 0px 0px 2px var(--accents-color);
 }
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
