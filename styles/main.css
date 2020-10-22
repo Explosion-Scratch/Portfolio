@@ -39,7 +39,7 @@ p {
 }
 
 #float {
-  float: right;
+  float: left;
   width: 150px;
   background: var(--background-color);
   margin-left: 20px;
