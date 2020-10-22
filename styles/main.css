@@ -42,7 +42,7 @@ p {
   float: left;
   width: 150px;
   background: var(--background-color);
-  margin-left: 20px;
+  margin-right: 20px;
 }
 #float-container {
   display: inline;
