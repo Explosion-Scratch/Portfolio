@@ -8,6 +8,7 @@ button {
   border: 1px solid var(--accents-color);
   border-radius: 5px;
   color: var(--accents-color);
+  margin: 2px;
 }
 button:hover {
   background-color: var(--accents-color);
