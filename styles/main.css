@@ -42,6 +42,11 @@ p {
   float: right;
   width: 150px;
   background: var(--background-color);
+  margin-left: 20px;
+}
+#float-container {
+  display: inline;
+  height: fit-content;
 }
 a {
   text-decoration: none;
