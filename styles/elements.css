@@ -124,10 +124,19 @@ footer {
 .dark-mode footer {
   text-shadow: 0px 0px 2px var(--accents-color);
 }
-
+svg {
+  transform-origin: top;
+  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+svg:first-child {
+  transform-origin: bottom;
+}
 @keyframes animateWave {
   0% {
-    transform: scale(1, 0);
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.9);
   }
   100% {
     transform: scale(1, 1);
