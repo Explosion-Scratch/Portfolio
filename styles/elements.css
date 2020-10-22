@@ -67,6 +67,9 @@ button:active {
 .cover * {
   --cover-color: var(--lighter);
 }
+.cover *::selection {
+  background-color: transparent;
+}
 .two,
 .two * {
   --cover-color: var(--background-color);
@@ -141,4 +144,8 @@ svg:first-child {
   100% {
     transform: scale(1, 1);
   }
+}
+::selection {
+  color: currentColor;
+  background-color: var(--accents-transparent);
 }
