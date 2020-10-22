@@ -38,16 +38,6 @@ p {
   font-size: 20px;
 }
 
-#float {
-  float: left;
-  width: 150px;
-  background: var(--background-color);
-  margin-right: 20px;
-}
-#float-container {
-  display: inline;
-  height: fit-content;
-}
 a {
   text-decoration: none;
 }
