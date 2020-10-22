@@ -114,3 +114,13 @@ button:active {
   );
   height: 5px;
 }
+footer {
+  background-color: var(--lighter);
+  margin: 0;
+  margin-top: -10px;
+  padding: 20px;
+  text-shadow: 2px -1px var(--background-color);
+}
+.dark-mode footer {
+  text-shadow: 0px 0px 2px var(--accents-color);
+}
