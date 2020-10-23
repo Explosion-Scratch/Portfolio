@@ -1,8 +1,6 @@
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
-  } else if (window.localStorage.getItem("dark_mode") === "null") {
-    darkMode();
   }
 };
 
