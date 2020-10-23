@@ -167,9 +167,10 @@ svg:first-child {
   box-shadow: 0 0 0 5px var(--accents-transparent);
   animation: iconify 3s infinite;
 }
-@media (min-width: 800px) {
+@media (min-width: 300px) and (min-height: 400px) {
   .iconify {
     height: 10vh;
+    min-height: 40px;
     padding: 2vh;
     position: absolute;
     top: 10%;
@@ -184,11 +185,7 @@ svg:first-child {
     top: 40%;
   }
 }
-@media (min-height: 500px) {
-  .iconify {
-    height: 40px;
-  }
-}
+
 button {
   font-size: 15px;
 }
