@@ -15,12 +15,9 @@ function darkMode() {
 var old = localStorage.getItem("dark-mode");
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop >= 820) {
+  if (scrollTop == 820) {
     var element = document.querySelector("*");
-    element.classList.add("dark-mode");
-  } else {
-    var element = document.querySelector("*");
-    element.classList.remove("dark-mode");
+    element.classList.toggle("dark-mode");
   }
 }
 function round(number, nearest) {
