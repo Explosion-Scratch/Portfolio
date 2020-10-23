@@ -157,7 +157,7 @@ svg:first-child {
   margin: 10px;
   height: 50px;
   width: auto;
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
   border-radius: 5px;
   border: 1px solid var(--accents-color);
 }
