@@ -1,4 +1,4 @@
-var toggle = document.getElementsByClassName("toggle")[1];
+var toggle = document.getElementById("toggle");
 
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
@@ -10,6 +10,11 @@ function darkMode() {
   var element = document.querySelector("*");
   var dark = element.classList.toggle("dark-mode");
   window.localStorage.setItem("dark_mode", dark);
+  if (dark === true) {
+    toggle.checked = true;
+  } else {
+    toggle.checked = false;
+  }
 }
 
 function round(number, nearest) {
@@ -30,9 +35,3 @@ function scroll() {
   document.getElementById("scroll").style.width =
     (scrollTop / totalScroll) * 100 + "%";
 }
-
-function checkinput(element) {
-  if (true) {
-  }
-}
-toggle.addEventListener("input", checkinput());
