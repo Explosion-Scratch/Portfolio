@@ -167,7 +167,7 @@ svg:first-child {
   box-shadow: 0 0 0 5px var(--accents-transparent);
   animation: iconify 3s infinite;
 }
-@media (min-width: 300px) and (min-height: 400px) {
+@media (min-width: 600px) and (min-height: 400px) {
   .iconify {
     height: 10vh;
     min-height: 40px;
