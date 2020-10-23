@@ -29,11 +29,3 @@ function scroll() {
   document.getElementById("scroll").style.width =
     (scrollTop / totalScroll) * 100 + "%";
 }
-
-function format() {
-  $("[data-date]").append(
-    '<span style="color: var(--accents-color); font-family: monospace;" id="subtitle"><center>Date: ' +
-      $("[data-date]").attr("data-date") +
-      "</center></span>"
-  );
-}
