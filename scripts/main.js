@@ -3,8 +3,6 @@ var toggle = document.getElementById("toggle");
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
-  } else {
-    toggle.checked = false;
   }
 };
 
