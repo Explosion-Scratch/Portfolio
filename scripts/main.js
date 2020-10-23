@@ -3,7 +3,6 @@ var toggle = document.getElementsByClassName("toggle")[1];
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
-    toggle.checked = true;
   }
 };
 
@@ -33,7 +32,7 @@ function scroll() {
 }
 
 function checkinput(element) {
-  if (element.checked)
+  if (true) {
+  }
 }
-
 toggle.addEventListener("input", checkinput());
