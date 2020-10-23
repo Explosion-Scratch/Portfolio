@@ -19,7 +19,14 @@ ul li::before {
   margin: 0 auto;
   padding: 60px;
 }
-
+#subtitle {
+  text-align: center;
+  font-family: monospace;
+  color: var(--lighter);
+}
+#subtitle::before {
+  content: "Written: ";
+}
 h1,
 h2,
 h3,
