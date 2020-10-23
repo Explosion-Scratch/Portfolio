@@ -1,7 +1,8 @@
 @import "vars.css";
 @import "elements.css";
 * {
-  transition-property: background-color, color, opacity, background-size;
+  transition-property: background-color, color, opacity, background-size,
+    box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
   background-color: var(--background-color);
