@@ -150,6 +150,7 @@ svg:first-child {
   background-color: var(--accents-transparent);
 }
 .iconify {
+  transition-duration: 0.5s;
   padding: 10px;
   margin: 10px;
   height: 50px;
@@ -157,4 +158,7 @@ svg:first-child {
   color: var(--secondary-color);
   border-radius: 5px;
   border: 1px solid black;
+}
+.iconify:hover {
+  transform: rotateX(150deg);
 }
