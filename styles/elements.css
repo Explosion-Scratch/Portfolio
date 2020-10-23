@@ -196,3 +196,14 @@ svg:first-child {
 button {
   font-size: 15px;
 }
+
+hr {
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    var(--accents-color),
+    transparent
+  );
+  border: none;
+}

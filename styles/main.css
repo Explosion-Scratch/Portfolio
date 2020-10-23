@@ -22,7 +22,7 @@ ul li::before {
 #subtitle {
   text-align: center;
   font-family: monospace;
-  color: var(--lighter);
+  color: var(--accents-color);
 }
 #subtitle::before {
   content: "Written: ";

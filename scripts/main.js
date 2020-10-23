@@ -1,4 +1,5 @@
 window.onload = function () {
+  format();
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
   }
@@ -28,3 +29,5 @@ function scroll() {
   document.getElementById("scroll").style.width =
     (scrollTop / totalScroll) * 100 + "%";
 }
+
+function format() {}
