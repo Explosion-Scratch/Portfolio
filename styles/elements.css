@@ -162,4 +162,17 @@ svg:first-child {
 .iconify:hover {
   border-color: var(--accents-color);
   box-shadow: 0 0 0 5px var(--accents-transparent);
+  animation: iconify 3s infinite;
+}
+
+@keyframes iconify {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
