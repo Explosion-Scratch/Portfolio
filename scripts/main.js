@@ -31,9 +31,9 @@ function scroll() {
 }
 
 function format() {
-  $("[data-date]").html(
+  $("[data-date]").append(
     '<span id="subtitle"><center>' +
-      $("[data-date]").html() +
+      $("[data-date]").attr("data-date") +
       "</center></span>"
   );
 }
