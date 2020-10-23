@@ -81,7 +81,7 @@ button:active {
 .cover {
   overflow: hidden;
   width: 100vw;
-  height: 70vh !important;
+  height: fit-content;
   margin: 0 auto;
   background-color: var(--cover-color);
   background-color: attr(data-background);
