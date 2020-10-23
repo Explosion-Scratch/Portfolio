@@ -184,6 +184,9 @@ svg:first-child {
   .iconify:nth-of-type(2) {
     top: 40%;
   }
+  .iconify:nth-of-type(3) {
+    top: 55%;
+  }
 }
 @media (max-width: 300px) {
   .iconify {
