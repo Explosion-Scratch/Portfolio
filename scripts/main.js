@@ -32,7 +32,7 @@ function scroll() {
 
 function format() {
   $("[data-date]").append(
-    '<span id="subtitle"><center>Date: ' +
+    '<span style="color: var(--accents-color); font-family: monospace;" id="subtitle"><center>Date: ' +
       $("[data-date]").attr("data-date") +
       "</center></span>"
   );
