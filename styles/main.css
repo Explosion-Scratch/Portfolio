@@ -1,7 +1,7 @@
 @import "vars.css";
 @import "elements.css";
 * {
-  transition-property: background-color, color, opacity;
+  transition-property: background-color, color, opacity, background-size;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
   background-color: var(--background-color);
@@ -58,7 +58,6 @@ img {
   margin: none;
 }
 a {
-  transition: background-size 0.3s ease-out;
   background-image: linear-gradient(
     to right,
     var(--accents-transparent) 0%,
