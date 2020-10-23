@@ -12,14 +12,15 @@ function darkMode() {
   window.localStorage.setItem("dark_mode", dark);
 }
 
+var old = localStorage.getItem("dark-mode");
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop >= 820) {
     var element = document.querySelector("*");
-    var dark = element.classList.add("dark-mode");
+    element.classList.add("dark-mode");
   } else {
     var element = document.querySelector("*");
-    var dark = element.classList.remove("dark-mode");
+    element.classList.remove("dark-mode");
   }
 }
 function round(number, nearest) {
