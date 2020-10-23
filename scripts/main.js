@@ -12,23 +12,13 @@ function darkMode() {
   window.localStorage.setItem("dark_mode", dark);
 }
 
-window.onscroll = function () {
-  scroll();
-};
-
 function scroll() {
-  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-  var totalScroll =
-    document.body.scrollHeight - document.documentElement.clientHeight;
-  document.getElementById("scroll").style.width =
-    (scrollTop / totalScroll) * 100 + "%";
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  console.log(scrollTop);
 }
-function isScrolledIntoView(elem) {
-  var docViewTop = $(window).scrollTop();
-  var docViewBottom = docViewTop + $(window).height();
-
-  var elemTop = $(elem).offset().top;
-  var elemBottom = elemTop + $(elem).height();
-
-  return elemBottom <= docViewBottom && elemTop >= docViewTop;
+function round(number, nearest) {
+  var output = number / nearest;
+  output = Math.round(output);
+  output = output * nearest;
+  return output;
 }
