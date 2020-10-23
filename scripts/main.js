@@ -1,6 +1,9 @@
+var toggle = document.getElementsByClassName("toggle")[1];
+
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
+    toggle.checked = true;
   }
 };
 
@@ -29,6 +32,8 @@ function scroll() {
     (scrollTop / totalScroll) * 100 + "%";
 }
 
-function checkinput() {}
-var toggle = document.getElementsByClassName("toggle")[1];
+function checkinput(element) {
+  if (element.checked)
+}
+
 toggle.addEventListener("input", checkinput());
