@@ -149,12 +149,9 @@ svg:first-child {
   color: currentColor;
   background-color: var(--accents-transparent);
 }
-@media (min-width: 600px) {
-  .iconify {
-    float: left;
-  }
-}
 .iconify {
+  list-style-type: none;
+  overflow: hidden;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.975);
   padding: 10px;
   margin: 10px;
@@ -164,11 +161,13 @@ svg:first-child {
   border-radius: 5px;
   border: 1px solid var(--accents-color);
 }
+
 .iconify:hover {
   border-color: var(--accents-color);
   box-shadow: 0 0 0 5px var(--accents-transparent);
   animation: iconify 3s infinite;
 }
+
 button {
   font-size: 15px;
 }
