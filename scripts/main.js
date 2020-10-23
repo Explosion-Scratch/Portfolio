@@ -32,5 +32,7 @@ function scroll() {
 
 function format() {
   var everything = document.querySelectorAll("*");
-  f;
+  for (var i = 0; i < everything.length; i++) {
+    everything[i].
+  };
 }
