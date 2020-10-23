@@ -1,7 +1,7 @@
 {
-  "name": "portfolio-w-github",
+  "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A cool portfolio!",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
