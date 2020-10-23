@@ -11,6 +11,9 @@
   color: var(--main-color);
   overflow-x: hidden;
 }
+ul li::before {
+  content: "- ";
+}
 .container {
   max-width: 700px;
   margin: 0 auto;
