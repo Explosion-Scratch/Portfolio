@@ -185,7 +185,11 @@ svg:first-child {
     top: 40%;
   }
 }
-
+@media (max-width: 300px) {
+  .iconify {
+    display: none;
+  }
+}
 button {
   font-size: 15px;
 }
