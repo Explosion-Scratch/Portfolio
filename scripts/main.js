@@ -1,5 +1,4 @@
 window.onload = function () {
-  format();
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
   }
@@ -29,3 +28,7 @@ function scroll() {
   document.getElementById("scroll").style.width =
     (scrollTop / totalScroll) * 100 + "%";
 }
+
+function checkinput() {}
+var toggle = document.getElementsByClassName("toggle")[1];
+toggle.addEventListener("input", checkinput());
