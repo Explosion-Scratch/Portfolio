@@ -16,3 +16,15 @@ function round(number, nearest) {
   output = output * nearest;
   return output;
 }
+
+window.onscroll = function () {
+  scroll();
+};
+
+function scroll() {
+  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+  var totalScroll =
+    document.body.scrollHeight - document.documentElement.clientHeight;
+  document.getElementById("scroll").style.width =
+    (scrollTop / totalScroll) * 100 + "%";
+}
