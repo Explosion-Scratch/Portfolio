@@ -31,8 +31,9 @@ function scroll() {
 }
 
 function format() {
-  var everything = document.querySelectorAll("*");
-  for (var i = 0; i < everything.length; i++) {
-    everything[i].
-  };
+  $("[data-date]").html(
+    '<span id="subtitle"><center>' +
+      $("[data-date]").html() +
+      "</center></span>"
+  );
 }
