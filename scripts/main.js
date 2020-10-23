@@ -35,7 +35,3 @@ function scroll() {
   document.getElementById("scroll").style.width =
     (scrollTop / totalScroll) * 100 + "%";
 }
-
-function checkbox() {
-  darkMode();
-}
