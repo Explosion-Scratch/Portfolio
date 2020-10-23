@@ -14,7 +14,13 @@ function darkMode() {
 
 function scroll() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(scrollTop);
+  if (scrollTop >= 820) {
+    var element = document.querySelector("*");
+    var dark = element.classList.add("dark-mode");
+  } else {
+    var element = document.querySelector("*");
+    var dark = element.classList.remove("dark-mode");
+  }
 }
 function round(number, nearest) {
   var output = number / nearest;
