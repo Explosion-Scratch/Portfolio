@@ -31,5 +31,6 @@ function scroll() {
 }
 
 function format() {
-  var headers = 
+  var everything = document.querySelectorAll("*");
+  f;
 }
