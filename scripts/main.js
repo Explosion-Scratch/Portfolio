@@ -12,14 +12,6 @@ function darkMode() {
   window.localStorage.setItem("dark_mode", dark);
 }
 
-var old = localStorage.getItem("dark-mode");
-function scroll() {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop == 820) {
-    var element = document.querySelector("*");
-    element.classList.toggle("dark-mode");
-  }
-}
 function round(number, nearest) {
   var output = number / nearest;
   output = Math.round(output);
