@@ -15,6 +15,15 @@
 ul li::before {
   content: "- ";
 }
+#code {
+  background-color: #272822;
+  display: inline-block;
+  color: white;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: monospace;
+  padding: 2px;
+}
 pre * {
   background-color: #272822;
 }
