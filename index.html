@@ -36,8 +36,7 @@
     <!--About me section-->
     <span onclick='darkMode()' id='toggle' type="checkbox" class="toggle"></span>
     <div class="container">
-      <h1>About me</h1>
-      <button ripple='ripple'>Test</button>
+      <h1 ripple='ripple'>About me</h1>
       <p>
         Hi there! Welcome to my website! I am a 15 year old boy who loves to
         code! I used to code a <i>ton</i>
@@ -167,97 +166,3 @@ Top scroll bar
 
 
 -->
-<script>
-(function() { var cleanUp, debounce, i, len, ripple, rippleContainer, ripples, showRipple;
-
-debounce = function(func, delay) {
-  var inDebounce;
-  inDebounce = undefined;
-  return function() {
-    var args, context;
-    context = this;
-    args = arguments;
-    clearTimeout(inDebounce);
-    return inDebounce = setTimeout(function() {
-      return func.apply(context, args);
-    }, delay);
-  };
-};
-
-showRipple = function(e) {
-  var pos, ripple, rippler, size, style, x, y;
-  var ripple = this;
-  var rippler = document.createElement('span');
-  var size = ripple.offsetWidth;
-  var pos = ripple.getBoundingClientRect();
-  var x = e.pageX - pos.left - (size / 2);
-  var y = e.pageY - pos.top - (size / 2);
-  var style = 'top:' + y + 'px; left: ' + x + 'px; height: ' + size + 'px; width: ' + size + 'px;';
-  ripple.rippleContainer.appendChild(rippler);
-  return rippler.setAttribute('style', style);
-};
-
-cleanUp = function() {
-  while (this.rippleContainer.firstChild) {
-    this.rippleContainer.removeChild(this.rippleContainer.firstChild);
-  }
-};
-
-ripples = document.querySelectorAll('[ripple]');
-
-for (i = 0, len = ripples.length; i < len; i++) {
-  var ripple = ripples[i];
-  var rippleContainer = document.createElement('div');
-  rippleContainer.className = 'ripple--container';
-  ripple.addEventListener('mousedown', showRipple);
-  ripple.addEventListener('mouseup', debounce(cleanUp, 2000));
-  ripple.rippleContainer = rippleContainer;
-  ripple.appendChild(rippleContainer);
-}
- }());
-
-</script>
-<style>
-[ripple] {
-  position: relative;
-  overflow: hidden;
-}
-[ripple] .ripple--container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-[ripple] .ripple--container span {
-  transform: scale(0);
-  border-radius: 100%;
-  position: absolute;
-  opacity: 0.75;
-  background-color: #fff;
-  animation: ripple 1000ms;
-}
-@-moz-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-@-webkit-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-@-o-keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2);
-  }
-}
-@keyframes ripple {
-  to {
-    opacity: 0;
-    transform: scale(2);
-  }
-</style>
