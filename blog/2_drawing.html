@@ -49,7 +49,14 @@
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
       };
-      </code></pre>        
+      </code></pre>
+      <p>Now we need to make a variable that keeps track of whether the mouse is pressed, so that we know when we're drawing.</p>
+      <pre><code class='language-js'>
+      // Add this at the bottom of the window.load thing. Make sure it's in that loop!
+      canvas.addEventListener("mousedown", startPosition);
+      canvas.addEventListener("mouseup", finishedPosition);
+      canvas.addEventListener("mousemove", draw);</code></pre>
+      <p>Now we need to define those functions lol</p>
     </div>
   </body>
 </html>
