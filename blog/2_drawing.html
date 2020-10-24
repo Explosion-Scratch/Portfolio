@@ -56,7 +56,60 @@
       canvas.addEventListener("mousedown", startPosition);
       canvas.addEventListener("mouseup", finishedPosition);
       canvas.addEventListener("mousemove", draw);</code></pre>
-      <p>Now we need to define those functions lol</p>
+      <p>Now we need to define those functions lol, so put this inside the window.load loop.</p>
+      <pre><code class='language-js'>
+          let painting = false;
+
+          function startPosition(e) {
+            painting = true;
+            draw(e);
+          }
+        
+          function finishedPosition() {
+            ctx.beginPath();
+            painting = false;
+          }
+        
+          function draw(e) {
+            if (!painting) return;
+            ctx.lineWidth = 10;
+            ctx.lineCap = "round";
+        
+            ctx.lineTo(e.clientX, e.clientY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.clientX, e.clientY);
+          }
+        </code>
+      </pre>
+      <p>So now the complete js file is this:</p>
+      <pre>
+        <code class='language-js'>
+            let painting = false;
+
+            function startPosition(e) {
+              painting = true;
+              draw(e);
+            }
+          
+            function finishedPosition() {
+              ctx.beginPath();
+              painting = false;
+            }
+          
+            function draw(e) {
+              if (!painting) return;
+              ctx.lineWidth = 10;
+              ctx.lineCap = "round";
+          
+              ctx.lineTo(e.clientX, e.clientY);
+              ctx.stroke();
+              ctx.beginPath();
+              ctx.moveTo(e.clientX, e.clientY);
+            }
+          </code>
+        </pre>
+        <p>Thanks for reading! Hopefully you actually made this and learned something! Until next time!<br>- --Explosion--</p>
     </div>
   </body>
 </html>
