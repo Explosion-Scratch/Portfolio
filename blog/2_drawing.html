@@ -25,7 +25,8 @@
         is an html element using the tags
         <span id="code">&lt;canvas&gt;</span> and
         <span id="code">&lt;/canvas&gt;</span>
-        <h1>Coding the canvas</h1>
+
+        <h2>Coding the canvas</h2>
         <p>Start this off by making an html file with this in it:</p>
         <pre><code class='language-html'>&lt;canvas id='canvas'&gt;&lt;/canvas&gt;</code></pre>
         <p>Then, we need to create a new JS file and link it in the html. So create a new JS file and then put this at the top of your html to link it:</p>
@@ -36,6 +37,19 @@
           &lt;!--Exit the head element so stuff doesn't get messed up --&gt;
         &lt;/head&gt;</code></pre>
       </p>
+
+      <h2>The JS</h2>
+      <p>Now we need to make the JS for it so that this thing actually works!</p>
+      <p>We'll start out by resizing the canvas to take up the whole screen.
+      <pre><code class='language-js'>window.addEventListener("load", () => {
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+      
+        //Resizing
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+      };
+      </code></pre>        
     </div>
   </body>
 </html>
