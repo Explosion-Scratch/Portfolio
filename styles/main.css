@@ -15,6 +15,9 @@
 ul li::before {
   content: "- ";
 }
+pre * {
+  background-color: #272822;
+}
 .container {
   max-width: 700px;
   margin: 0 auto;
