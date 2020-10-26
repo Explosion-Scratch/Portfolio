@@ -48,7 +48,6 @@ function insertjs(js) {
   document.getElementsByTagName("HEAD")[0].appendChild(output);
 }
 window.onload = function () {
-  insertcss("/styles/main.css");
   insertjs("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
   insertcss("/styles/images.css");
   insertjs("/scripts/images.js");
