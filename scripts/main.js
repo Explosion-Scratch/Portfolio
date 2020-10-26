@@ -64,6 +64,3 @@ window.onload = function () {
     '<meta name="viewport" content="width=device-width, initial-scale=1.0" />'
   );
 };
-var url = new URL(window.location.href);
-url = url.pathname;
-console.log(url);
