@@ -47,10 +47,20 @@ function insertjs(js) {
   output.setAttribute("src", js);
   document.getElementsByTagName("HEAD")[0].appendChild(output);
 }
+function inserthtml(html) {
+  var output = document.createElement("DIV");
+  output.innerHTML = html;
+  document.getElementsByTagName("HEAD")[0].appendChild(output);
+}
 window.onload = function () {
   insertjs("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
   insertcss("/styles/images.css");
   insertjs("/scripts/images.js");
   insertcss("/styles/tooltips.css");
   insertjs("https://code.iconify.design/1/1.0.7/iconify.min.js");
+  insertjs("/prism/prism.js");
+  insertcss("/prism/prism.css");
+  inserthtml(
+    '<meta name="viewport" content="width=device-width, initial-scale=1.0" />'
+  );
 };
